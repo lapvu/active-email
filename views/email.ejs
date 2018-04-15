@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%=emailRecord.email%>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <% if(emailRecord.status === 'active'){%>
+        <div class="alert-success">
+            <p>this email:
+                <%=emailRecord.email%> has active</p>
+        </div>
+        <%}else{%>
+            <div class="alert-danger">
+                <p>this email:
+                    <%=emailRecord.email%> is not active , we sent link active to this email,please check and follow guide.
+                </p>
+            </div>
+            <%}%>
+</body>
+
+</html>

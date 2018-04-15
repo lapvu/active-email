@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.box{
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.box input{
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.box input:focus{
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+.alert-danger{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  background: rgb(255, 68, 68);
+  border-radius: 4px;
+  width: 40%;
+  color: #fff;
+}
+.alert-success{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  background: rgb(122, 255, 104);
+  border-radius: 4px;
+  width: 40%;
+}
+@media screen and (max-width: 800px) {
+  .box {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .alert-danger{
+    width: 80%;
+  }
+  .alert-success{
+    width: 80%;
+  }
+}
