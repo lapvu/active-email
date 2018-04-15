@@ -26,7 +26,7 @@ router.post('/', (req, res, next) => {
     from: 'egvn001@gmail.com',
     to: email,
     subject: 'active email',
-    html: '<p>Follow this </p><a href="http://localhost:3000/activation/' + token + '">link</a>'
+    html: '<p>Follow this </p><a href="https://active-email.herokuapp.com/activation/' + token + '">link</a>'
   };
   if (emailRecord) {
     res.redirect('/email/' + email)
