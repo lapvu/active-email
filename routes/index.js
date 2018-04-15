@@ -17,13 +17,13 @@ router.post('/', (req, res, next) => {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'your email here',
-      pass: 'your password here'
+      user: 'egvn001@gmail.com',
+      pass: '123456vn'
     }
   });
   var token = jwt.sign({ mail: email }, 'mysecret');
   var mailOptions = {
-    from: 'lapvv62@wru.vn',
+    from: 'egvn001@gmail.com',
     to: email,
     subject: 'active email',
     html: '<p>Follow this </p><a href="http://localhost:3000/activation/' + token + '">link</a>'
